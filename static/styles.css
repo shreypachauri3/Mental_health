@@ -1,0 +1,242 @@
+
+.sqcard{
+ height: 200px;
+ width:250px;
+ position: relative;
+ perspective: 4000px;
+ align-items: center;
+ background-color: rgb(244, 248, 248);
+
+
+}
+.innersqcard{
+  transform-style:preserve-3d;
+  transition: all 0.5s ease;
+  height:200px;
+ width:250px;
+ position:absolute;
+ border: 2px solid;
+  
+}
+.Front{
+    display:flex;
+    height:200px;
+    width:250px;
+    background-color:rgb(106, 245, 71);
+    position: absolute;
+    backface-visibility: hidden;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+ 
+}
+.back{
+    height:200px;
+    width:250px;
+    background-color:rgb(243, 228, 18);
+    position:absolute;
+    align-items: center;
+
+ 
+    transform:rotateY(180deg);
+    backface-visibility: hidden;
+    
+}
+.sqcard:hover .innersqcard{
+    transform: rotateY(180deg);
+
+}
+.services{
+    display: flex;
+    justify-content: space-evenly;
+}
+.sqcard{
+    display:flex;
+    justify-content:space-evenly;
+    border-style:groove;
+    border-width:1px;
+
+}
+.card:hover{
+    transition-duration: 500ms;
+    transform:scale(1.2)
+
+}
+.tales {
+    width: 100%;
+  }
+  .carousel-inner{
+    width:100%;
+    max-height: 80vh; 
+  }
+img{
+  max-width: 100%;
+  max-height: 100%;
+  display: block
+}
+.containerfluid{
+    display:flex;
+    flex-direction: row;
+}
+
+.bd-example{
+    width:100%
+}
+/* kjdscibdscb
+ */
+ .blockquote {
+    padding: 60px 80px 40px;
+    position: relative;
+}
+.blockquote p {
+    font-family: "Utopia-italic";
+    font-size: 35px;
+    font-weight: 700px;
+    text-align: center;
+}
+
+/*blockquote p::before {
+    content: "\f095"; 
+    font-family: FontAwesome;
+   display: inline-block;
+   padding-right: 6px;
+   vertical-align: middle;
+  font-size: 180px;
+ }*/
+
+.blockquote:before {
+  position: absolute;
+  font-family: 'FontAwesome';
+  top: 0;
+  
+  content:"\f10d";
+  font-size: 200px;
+  color: rgba(0,0,0,0.1);
+   
+}
+
+.blockquote::after {
+    content: "";
+    top: 20px;
+    left: 50%;
+    margin-left: -100px;
+    position: absolute;
+    border-bottom: 3px solid #bf0024;
+    height: 3px;
+    width: 200px;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic);
+.otro-blockquote{
+  font-size: 1.4em;
+  width:60%;
+  margin:50px auto;
+  font-family:Open Sans;
+  font-style:italic;
+  color: #555555;
+  padding:1.2em 30px 1.2em 75px;
+  border-left:8px solid #78C0A8 ;
+  line-height:1.6;
+  position: relative;
+  background:#EDEDED;
+}
+
+.otro-blockquote::before{
+  font-family:Arial;
+  content: "\201C";
+  color:#78C0A8;
+  font-size:4em;
+  position: absolute;
+  left: 10px;
+  top:-10px;
+}
+
+.otro-blockquote::after{
+  content: '';
+}
+
+.otro-blockquote span{
+  display:block;
+  color:#333333;
+  font-style: normal;
+  font-weight: bold;
+  margin-top:1em;
+}
+/* kdjbc
+4 */
+.cta {
+    position: relative;
+    margin: auto;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+    justify-content: center;
+   }
+   
+   .cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: #b1dae7;
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease;
+   }
+   
+   .cta span {
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #234567;
+   }
+   
+   .cta svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #234567;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+   }
+   
+   .cta:hover:before {
+    width: 100%;
+    background: #b1dae7;
+   }
+   
+   .cta:hover svg {
+    transform: translateX(0);
+   }
+   
+   .cta:active {
+    transform: scale(0.95);
+   }
+   .btn{
+       display: flex;
+    text-align: center;
+    align-content: center;
+   }
+
+.pp{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin:15px;
+    flex-wrap: wrap;
+    padding-left:50px;
+}
+.flip-card{
+    margin:50px;
+    margin-right: 20px;
+}
+   

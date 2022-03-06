@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .container{
+            width:250px;
+            height:250px;
+            background-color: rgb(58, 243, 33);
+            display:block;
+        }
+    </style>
+    <div class="container">
+
+    </div>
+</body>
+<Script>
+let timeout;
+myFunction();
+function myFunction() {
+  timeout = setTimeout(alertFunc, 2000);
+}
+
+function alertFunc() {
+    var elems = document.getElementsByClassName('container');
+   for (var i=0;i<elems.length;i+=1){
+     elems[i].style.display = 'none';
+   }
+
+}
+</Script>
+</html>
